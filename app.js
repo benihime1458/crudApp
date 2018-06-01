@@ -8,7 +8,7 @@ $(document).ready(function() {
 	});
 
 	$('.getData').click(() => {
-		let retrievedData = localStorage.setItem(textFieldVal)
+		let retrievedData = localStorage.getItem('myFormTextData');
 		$('.debug').text(retrievedData);
-	})
+	});
 });
