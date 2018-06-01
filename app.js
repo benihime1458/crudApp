@@ -1,3 +1,6 @@
 $(document).ready(function() {
-	$('body').html(`<p>Hello World</p>`);
+	$('.submitForm').click(() => {
+		let textFieldVal = $('.textField').val();
+		$('.debug').text(textFieldVal);
+	});
 });
