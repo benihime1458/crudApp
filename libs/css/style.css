@@ -1,0 +1,36 @@
+body {
+	font-family: 'Carter One', cursive;
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-attachment: fixed;
+}
+
+h1, h4 {
+	text-align: center;
+}
+
+input {
+	font-family: 'Carter One', cursive;
+	font-size: .7em;
+	width: 40%;
+	padding: 8px 8px 8px 8px;
+}
+
+#editorArea {
+	display: flex;
+	justify-content: center;
+}
+
+
+.buttons {
+	margin: 25px;
+	display: flex;
+	justify-content: center;
+}
+
+button {
+	font-family: 'Carter One', cursive;
+	margin: 0px 5px 0px 5px;
+	padding: 5px 10px 5px 10px;
+}

@@ -1,15 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Crud App</title>
-	<script src="libs/jquery.js"></script>
-	<script src="app.js"></script>
-</head>
-<body>
-	<input class="textField" type="text" name="firstInputField" >
-	<button class="setData">Click to save text</button>
-	<button class="getData">Click to get text</button>
-	<div class="debug"></div>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>Hecka Snippets</title>
+
+		<!-- CSS and Font -->
+		<link rel="stylesheet" href="libs/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
+
+		<!-- jQuery -->
+		<script src="libs/javascript/jquery.js"></script>
+		
+		<!-- CodeMirror -->
+		<link rel="stylesheet" href="libs/codemirror/codemirror.css">
+		<link rel="stylesheet" href="libs/codemirror/theme/solarized.css">
+		<script src="libs/codemirror/codemirror.js"></script>
+		<script src="libs/codemirror/mode/javascript.js"></script>
+	</head>
+	<body>
+		<h1>Hecka Snippets</h1>
+
+		<div class="container">
+
+			<h4 id="snipName">Snippet Name</h4>
+				<div id="editorArea">
+					<textarea id="code" name="code">
+/*
+
+Welcome to Hecka Snippets! 
+
+This is a simple application that helps you save 
+and access HECKA snippets of your own code within your localStorage.
+
+Hecka Snippets can... 
+	- highlight syntax for javascript c
+
+*/
+
+// sample syntax
+const Hello = function() {
+	return "Hello World";
+}
+				</textarea>
+			</div>
+			<div class="buttons">
+				<input class="codeName" type="text" placeholder="Name yo snippet here yo..."></input>
+				<button class="saveSnip">Save Snippet</button>
+				<button class="getData">Get Snippet</button>
+				<button class="resetData">Reset</button>
+				<button class="listAll">List</button>
+			</div>
+		</div>
+	<script src="libs/javascript/app.js"></script>
+	</body>
 </html>
